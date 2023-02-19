@@ -1,0 +1,109 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+img {
+  width: 100%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: rgb(0, 0, 0);
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.container .header {
+  flex-direction: column;
+}
+
+.container .main-content {
+  width: 50rem;
+  height: 28.56rem;
+  border: 2px solid #0bbaeb86;
+  border-radius: 10px;
+  box-shadow: -2px 3px 19px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 3px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 3px 19px 1px rgba(0, 0, 0, 0.75);
+  display: flex;
+}
+
+.main-content .user,
+.main-content .computer {
+  flex: 1;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.main-content .user {
+  /* border-right: 2px solid #0e83cc; */
+  /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+}
+.curr-sign {
+  font-size: 6rem;
+  margin-block: 1rem;
+}
+.signs {
+  position: absolute;
+  padding-block: 1.2rem;
+  top: 435px;
+}
+.signs .sign-btn {
+  background-color: transparent;
+  border: 1px solid rgb(1, 133, 209);
+  box-shadow: -2px 3px 19px -1px rgba(0, 0, 0, 0.75);
+  margin-left: 0.5rem;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.signs .sign-btn:hover {
+  background-color: rgb(8, 21, 31);
+  border: none;
+  transform: scale(1.1);
+}
+.signs .sign-btn:active {
+  transform: scale(1);
+}
+
+.signs .sign {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.username {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.score {
+  padding-block: 1.3rem;
+  margin: 0rem 8rem;
+  font-size: 1.3rem;
+  box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+.box {
+  position: absolute;
+  padding-block: 1.2rem;
+  /* border: 1px solid pink; */
+  box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  top: 14rem;
+  width: 215px;
+}
