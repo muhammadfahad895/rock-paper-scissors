@@ -15,6 +15,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -22,8 +23,8 @@ img {
   min-width: 100%;
   min-height: 100vh;
   background: #00c6ff;
-  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+  background: -webkit-linear-gradient(to right, #0073ff50, #00c6ff);
+  background: linear-gradient(to right, #0073ff8c, #00c6ff);
   color: rgb(0, 0, 0);
   gap: 2rem;
   flex-direction: column;
@@ -36,12 +37,11 @@ img {
 .container .main-content {
   width: 50rem;
   height: 28.56rem;
-  border: 2px solid #0bbaeb86;
   border-radius: 10px;
-  box-shadow: -2px 3px 19px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -2px 3px 19px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 3px 19px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 3px 13px -4px rgb(0 0 0 / 75%);
+
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-content .user,
@@ -51,12 +51,8 @@ img {
   padding-block: 2rem;
 }
 
-.main-content .user {
-  /* border-right: 2px solid #0e83cc; */
-  /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
-}
 .curr-sign {
-  font-size: 6rem;
+  font-size: 7rem;
   margin-block: 1rem;
 }
 .signs {
@@ -106,4 +102,9 @@ img {
   text-align: center;
   top: 14rem;
   width: 215px;
+}
+.box p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
